@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap');
+
 * {
     box-sizing: border-box;
     font-size: 16px;
@@ -16,6 +17,7 @@ body {
 button {
     background: transparent;
     border: none;
+    cursor: pointer;
 }
 
 .container-wrap {
@@ -26,6 +28,19 @@ button {
 .flex {
     display: flex;
     align-items: center;
+}
+
+.btn-green {
+    background: #9DD558;
+    border-radius: 18px;
+    color: white;
+    border: none;
+    padding: 18px 45px;
+}
+
+.arrow-left {
+    position: absolute;
+    left: 18px;
 }
 
 /* HEADER */
@@ -238,4 +253,219 @@ button {
     background-image: url('/img/add.svg');
     width: 11px;
     height: 11px;
+}
+
+/* MODAL BASKET */
+
+.modal {
+    width: 100%;
+    height: 100%;
+    background: #0000004d;
+    
+}
+
+.modal__window {
+    padding: 32px 30px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: white;
+    z-index: 1;
+    height: 100%;
+    display: none;
+}
+
+.modal__titles {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.modal__items {
+    padding-top: 50px;
+}
+
+.modal__img {
+    width: 70px;
+    height: 70px;
+}
+
+.modal__shoes-img {
+    width: 70px;
+    height: 70px;
+}
+
+.modal__name {
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0 12px 0 21px;
+}
+
+.modal__shoes-name {
+    font-weight: 400;
+    padding-bottom: 8px;
+}
+
+.modal__cost {
+    font-weight: 700;
+}
+
+.modal__cross {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #DBDBDB;
+    border-radius: 8px;
+}
+
+.modal__btn-cross {
+    width: 11px;
+    height: 11px;
+}
+
+.modal__result {
+    margin-top: 574px;
+}
+
+.modal__sum {
+    margin-bottom: 19px;
+}
+
+.modal__sum, .modal__tax {
+    justify-content: space-between;
+}
+
+.modal__sum, .modal__tax, .modal__btn--order {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.modal__text-result, .modal__text-tax {
+    font-weight: 400;
+}
+
+.modal__number-result, .modal__number-sum, 
+.modal__btn--order {
+    font-weight: 600;
+}
+
+.modal__tax {
+    margin-bottom: 24px;
+}
+
+.modal__btn-buy {
+    justify-content: center;
+}
+
+.modal__btn--order {
+    justify-content: space-between;
+}
+
+.modal__arrow {
+    padding-left: 30px;
+}
+
+/* EMPTY BASKET */
+
+.modal__empty, .modal__order-complete {
+    padding-top: 309px;
+    flex-direction: column;
+}
+
+.modal__box {
+    width: 120px;
+    height: 120px;
+}
+
+.modal__block, .modal__order-titles  {
+    text-align: center;
+}
+
+.modal__name-basket, .modal__order-name {
+    font-size: 22px;
+    line-height: 27px;
+}
+
+.modal__dscr-basket, .modal__order-dscr {
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.4);
+    margin: 9px 0 40px;
+}
+
+.modal__back-btn {
+    position: relative;
+}
+
+/* BASKET COMPLETE */
+
+.modal__order-complete--img {
+    width: 83px;
+    height: 120px;
+}
+
+.modal__order-name {
+    color: #87C20A;
+}
+
+/* MY BASKET AND MY FAVORITE */
+.body {
+    background: white;
+}
+
+.main__basket {
+    justify-content: flex-start;
+}
+
+.main__title-basket {
+    padding-left: 21px;
+}
+
+.arrow-back {
+    border: 1px solid #F2F2F2;
+    padding: 12px 14px;
+    border-radius: 8px;
+}
+
+.header__basket {
+    border-bottom: none;
+}
+
+.main__empty {
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.main__smile {
+    padding-bottom: 24px;
+}
+
+.main__names {
+    margin-bottom: 41px;
+}
+
+.main__titles-my-basket {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.main__dscr-my-basket {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 11px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.like {
+    background-image: url('/img/heart_liked.svg');
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 14px;
+}
+
+.liked-block {
+    padding: 8px 9px;
+    background: #FEF0F0;
 }
