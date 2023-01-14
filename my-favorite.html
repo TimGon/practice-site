@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="body">
+    <div class="container-wrap">
+        <!-- header -->
+        <header class="header header__basket">
+           <div class="header__wrap flex">
+               <div class="header__logo">
+                   <div class="header__logo--content flex">
+                       <img src="./img/logo.svg" alt="logo" class="header__img">
+                       <div class="header__content">
+                           <h1 class="header__title">REACT SNEAKERS</h1>
+                           <span class="header__name">Магазин лучших кроссовок</span>
+                       </div>
+                   </div>
+                   
+               </div>
+               <div class="header__buttons flex">
+                   <div class="header__buy flex">
+                       <img src="./img/basket.svg" alt="basket"> 
+                       <span>1205 руб</span>
+                   </div>
+                   <div class="header__favorite flex">
+                       <button class="header__fav"></button>
+                   </div>
+                   <div class="header__auth">
+                       <button class="header__auth--img"></button>
+                   </div>
+               </div>
+           </div>
+        </header>
+
+       <!-- main -->
+    <main class="main">
+        <div class="container">
+            <!-- if empty -->
+            <div class="main__empty flex">
+                <div class="main__smile"><img src="./img/cry_smile.png" alt="cry-smile" class="main__cry-smile"></div>
+                <div class="main__names">
+                    <div class="main__titles-my-basket">Закладок нет :(</div>
+                    <div class="main__dscr-my-basket">Вы ничего не добавляли в закладки</div>
+                </div>
+                <button class="modal__back-btn btn-green flex">Вернуться назад <img src="./img/arrow-left.svg" alt="" class="arrow-left">
+                </button>
+            </div>
+
+            <!-- if product added -->
+            <!-- <div class="main__titles main__basket flex">
+                <button class="arrow-back">
+                    <img class="arrow-back--img" src="./img/arrow-back.svg" alt="arrow-back" srcset="">
+                </button>
+                <h1 class="main__title-shoes main__title-basket">Мои закладки</h1>
+            </div>
+            <div class="main__shoes flex">
+                <div class="main__item">
+                    <div class="main__heart-block liked-block">
+                        <button class="main__fav-btn like"></button>
+                    </div>
+                    <img class="main__item--img" src="./img/green_shoes.jpg" alt="green_shoes">
+                    <p class="main__shoes--descr">Мужские Кроссовки Nike Blazer Mid Suede</p>
+                    <div class="main__wrap flex">
+                        <div class="main__wrap--cost">
+                            <div class="main__cost--title">Цена:</div>
+                            <div class="main__cost">12 999 руб.</div>
+                        </div>
+                        <div class="main__add"> <button class="add"></button></div>
+                    </div>
+                </div> -->
+        </div>
+    </main>
+</body>
+</html>

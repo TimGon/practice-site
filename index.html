@@ -9,7 +9,79 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="container-wrap">
+    <!-- modal basket -->
+    <div class="modal">
+        <div class="modal__window">
+            <div class="modal__titles">Корзина</div>
+            <!-- If basket empty -->
+            <!-- <div class="modal__empty flex">
+                <img src="./img/box.png" alt="box" class="modal__box">
+                <div class="modal__block">
+                    <div class="modal__name-basket">Корзина пустая</div>
+                    <div class="modal__dscr-basket">Добавьте хотя бы одну пару кроссовок, чтобы сделать заказ.</div>
+                </div>
+                <button class="modal__back-btn btn-green flex">Вернуться назад <img src="./img/arrow-left.svg" alt="arrow-left" class="arrow-left"></button>
+            </div> -->
+           
+            <!-- If in basket the order complete -->
+            <div class="modal__order-complete flex">
+                <img src="./img/order-complete.jpg" alt="order-complete" class="modal__order-complete--img">
+                <div class="modal__order-titles">
+                    <div class="modal__order-name">
+                        Заказ оформлен!
+                    </div>
+                    <div class="modal__order-dscr">Ваш заказ #18 скоро будет передан курьерской доставке</div>
+                </div>
+                <button class="modal__back-btn btn-green flex">Вернуться назад <img src="./img/arrow-left.svg" alt="" class="arrow-left">
+                </button>
+            </div>
+            <!-- IF basket no empty -->
+            <!-- <div class="modal__items flex">
+                <div class="modal__img">
+                    <img class="modal__shoes-img" src="" alt="" srcset="">
+                </div>
+                <div class="modal__name">
+                    <div class="modal__shoes-name">Мужские Кроссовки Nike Air Max 270</div>
+                    <div class="modal__cost">12 999 руб.</div>
+                </div>
+                <div class="modal__cross">
+                    <button class="modal__btn-cross">
+                        <img class="modal__cross--img" src="/img/cross.png" alt="cross" srcset="">
+                    </button>
+                </div>
+            </div>
+            <div class="modal__items flex">
+                <div class="modal__img">
+                    <img class="modal__shoes-img" src="" alt="" srcset="">
+                </div>
+                <div class="modal__name">
+                    <div class="modal__shoes-name">Мужские Кроссовки Nike Air Max 270</div>
+                    <div class="modal__cost">12 999 руб.</div>
+                </div>
+                <div class="modal__cross">
+                    <button class="modal__btn-cross">
+                        <img class="modal__cross--img" src="/img/cross.png" alt="cross" srcset="">
+                    </button>
+                </div>
+            </div>
+            <div class="modal__result">
+                <div class="modal__sum flex">
+                    <span class="modal__text-result">Итого:</span>
+                    <div class="modal__number-result">12 999 руб.</div>
+                </div>
+                <div class="modal__tax flex">
+                    <span class="modal__text-tax">Налог 5%:</span>
+                    <div class="modal__number-sum">1074 руб.</div>
+                </div>
+                <div class="modal__btn-buy flex">
+                    <button class="modal__btn--order btn-green flex">Оформить заказ <img class="modal__arrow" src="/img/arrow.svg" alt="arrow" srcset=""></button>
+                </div>
+            </div> -->
+        </div>
+
+    </div>
+
+<div class="container-wrap">
  <!-- header -->
  <header class="header">
     <div class="header__wrap flex">
